@@ -31,7 +31,7 @@ namespace gpiodutils {
 			shift_register(lines, int num_outputs = 8);
 			shift_register& set_val(int);
 			int get_val();
-			shift_register& enable_display(bool);
+			shift_register& enable_output(bool);
 			~shift_register();
 			void request();
 			void release();

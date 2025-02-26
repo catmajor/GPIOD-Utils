@@ -69,7 +69,7 @@ namespace gpiodutils {
 		RCLK.set_value(0);
 		return *this;
 	}
-	shift_register& shift_register::enable_display(bool disp) {
+	shift_register& shift_register::enable_output(bool disp) {
 		if (disp_used) {
 			if (disp) {
 				DISP.set_value(0);
